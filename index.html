@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1> Interactive Assignment</h1>
+
+  <!-- Tabs -->
+  <section>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="tab1">Features</button>
+      <button class="tab-btn" data-tab="tab2">Form</button>
+    </div>
+
+    <div class="tab-content active" id="tab1">
+      <h2>🎮 Interactive Features</h2>
+      <button id="themeToggle">🌙 Toggle Dark Mode</button>
+
+      <div class="counter-box">
+        <button id="decrease">-</button>
+        <span id="counter">0</span>
+        <button id="increase">+</button>
+      </div>
+    </div>
+
+    <div class="tab-content" id="tab2">
+      <h2>📋 Sign Up Form</h2>
+      <form id="signupForm" class="form-card">
+        <label>
+          Name: 
+          <input type="text" id="name" />
+          <span class="error" id="nameError"></span>
+        </label>
+        <label>
+          Email: 
+          <input type="text" id="email" />
+          <span class="error" id="emailError"></span>
+        </label>
+        <label>
+          Password: 
+          <input type="password" id="password" />
+          <span class="error" id="passwordError"></span>
+        </label>
+        <button type="submit">Sign Up</button>
+        <p id="formSuccess"></p>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
